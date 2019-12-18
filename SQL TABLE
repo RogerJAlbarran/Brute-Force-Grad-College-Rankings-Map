@@ -1,0 +1,38 @@
+-- Table: "Colleges"."Top Colleges"
+
+-- DROP TABLE "Colleges"."Top Colleges";
+
+CREATE TABLE "Colleges"."Top Colleges"
+(
+    "X" numeric(8,0) NOT NULL,
+    "Y" numeric(8,0) NOT NULL,
+    "OBJECT_ID" integer NOT NULL,
+    "UNIT_ID" integer NOT NULL,
+    "INSTNM" "char" NOT NULL,
+    "STREET" "char" NOT NULL,
+    "CITY" "char" NOT NULL,
+    "STATE" "char" NOT NULL,
+    "ZIP" integer NOT NULL,
+    "STFIP" integer NOT NULL,
+    "CNTY" "char" NOT NULL,
+    "NMCNTY" "char" NOT NULL,
+    "LOCALE" integer NOT NULL,
+    "LAT" numeric(8,0) NOT NULL,
+    "LON" numeric(8,0) NOT NULL,
+    "CBSA" integer NOT NULL,
+    "NMCBSA" "char" NOT NULL,
+    "CBSATYPE" integer NOT NULL,
+    "CSA" integer NOT NULL,
+    "NMCSA" "char" NOT NULL,
+    "NECTA" "char" NOT NULL,
+    "NMNECTA" "char" NOT NULL,
+    "CD" integer NOT NULL,
+    "SLDL" integer NOT NULL,
+    "SLDU" integer NOT NULL,
+    "SURVYEAR" numeric NOT NULL
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE "Colleges"."Top Colleges"
+    OWNER to postgres;
